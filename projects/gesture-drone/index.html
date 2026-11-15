@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOID 노이드 — 새 주소 noid.kr</title>
+<meta name="description" content="NOID 웹사이트가 리뉴얼되어 새 주소 noid.kr로 이전했어요.">
+<!-- 이 도메인은 더 이상 검색에 노출하지 않고, 새 주소를 대표 주소로 알려요 -->
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://noid.kr/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="NOID 노이드">
+<meta property="og:title" content="NOID 웹사이트가 noid.kr로 이전했어요">
+<meta property="og:description" content="리뉴얼된 새 사이트는 noid.kr에서 만나요.">
+<meta property="og:url" content="https://noid.kr/">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d1d1f;
+    --text-secondary: #6e6e73;
+    --line: #d2d2d7;
+    --btn-bg: #1d1d1f;
+    --btn-text: #ffffff;
+    --btn-hover: #000000;
+    --accent: #0071e3;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+      "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 20px;
+    text-align: center;
+  }
+  main { max-width: 520px; width: 100%; }
+  .symbol { width: 44px; height: auto; display: block; margin: 0 auto 32px; }
+  .eyebrow {
+    font-size: 14px; font-weight: 600; letter-spacing: 0.02em;
+    color: var(--text-secondary); margin-bottom: 12px;
+  }
+  h1 {
+    font-size: clamp(28px, 6vw, 40px); font-weight: 700;
+    line-height: 1.25; letter-spacing: -0.02em; margin-bottom: 16px;
+  }
+  p.desc { font-size: 17px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 36px; }
+  .domains {
+    display: inline-flex; align-items: center; gap: 12px;
+    font-size: 15px; font-weight: 500; margin-bottom: 36px;
+    padding: 10px 18px; border: 1px solid var(--line); border-radius: 980px;
+  }
+  .domains .old { color: var(--text-secondary); text-decoration: line-through; }
+  .domains .new { color: var(--text); font-weight: 700; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 52px; padding: 0 32px; border-radius: 980px;
+    background: var(--btn-bg); color: var(--btn-text);
+    font-size: 17px; font-weight: 600; text-decoration: none;
+    transition: background-color .2s, transform .2s;
+  }
+  .btn:hover { background: var(--btn-hover); transform: translateY(-1px); }
+  .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .btn svg { width: 16px; height: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <svg class="symbol" viewBox="0 0 19.1804 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NOID">
+    <path d="M18.1416 10.7588L19.1433 10.5734L17.9562 21.9629L8.71838 20.6644L16.9545 21.258L18.1416 10.7588Z" fill="#D5181A"/>
+    <path d="M1.81788 0L0 11.204L4.00675 10.2766L5.08263 4.41484L10.9073 5.30523L10.3508 9.46037L14.2833 8.56998L15.2479 2.30017L1.81788 0Z" fill="#000"/>
+    <path d="M18.1417 10.7588L15.4334 11.3895L14.5059 18.1416L8.68128 17.3255L9.23777 12.5025L5.34233 13.43L4.37774 20.2934L16.9545 21.258L18.1417 10.7588Z" fill="#000"/>
+  </svg>
+  <h1>웹사이트가 새로워졌어요</h1>
+  <p class="desc">웹사이트를 리뉴얼하면서 도메인을 바꿨어요.<br>앞으로는 새 주소에서 만나요.</p>
+  <div class="domains" aria-label="도메인 변경: noid-lab.com에서 noid.kr로">
+    <span class="old">noid-lab.com</span>
+    <span aria-hidden="true">→</span>
+    <span class="new">noid.kr</span>
+  </div>
+  <div>
+    <a class="btn" href="https://noid.kr/">
+      noid.kr로 이동
+      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</main>
+</body>
+</html>
